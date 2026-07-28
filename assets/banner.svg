@@ -1,0 +1,84 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050914"/>
+      <stop offset="55%" stop-color="#0a1330"/>
+      <stop offset="100%" stop-color="#111c3f"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#7a5cff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowM" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff2ec4" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ff2ec4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="needleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff2ec4"/>
+      <stop offset="100%" stop-color="#00f0ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+
+  <!-- ambient glows -->
+  <circle cx="960" cy="120" r="260" fill="url(#glow)"/>
+  <circle cx="1040" cy="260" r="200" fill="url(#glowM)"/>
+
+  <!-- speed lines -->
+  <g stroke="#00f0ff" opacity="0.18" stroke-width="2">
+    <line x1="0" y1="60" x2="500" y2="10"/>
+    <line x1="0" y1="120" x2="560" y2="60"/>
+    <line x1="0" y1="180" x2="480" y2="140"/>
+    <line x1="0" y1="260" x2="420" y2="230"/>
+    <line x1="0" y1="320" x2="380" y2="300"/>
+  </g>
+  <g stroke="#ff2ec4" opacity="0.12" stroke-width="3">
+    <line x1="700" y1="0" x2="1200" y2="90"/>
+    <line x1="750" y1="360" x2="1200" y2="200"/>
+  </g>
+
+  <!-- circuit / module nodes on right -->
+  <g opacity="0.85">
+    <polygon points="960,90 1000,110 1000,150 960,170 920,150 920,110" fill="none" stroke="#00f0ff" stroke-width="2" opacity="0.55"/>
+    <polygon points="1060,60 1092,78 1092,112 1060,130 1028,112 1028,78" fill="none" stroke="#ff2ec4" stroke-width="2" opacity="0.5"/>
+    <polygon points="1080,180 1112,198 1112,232 1080,250 1048,232 1048,198" fill="none" stroke="#00f0ff" stroke-width="2" opacity="0.5"/>
+    <polygon points="990,240 1020,257 1020,289 990,306 960,289 960,257" fill="none" stroke="#7a5cff" stroke-width="2" opacity="0.5"/>
+    <line x1="980" y1="130" x2="1055" y2="100" stroke="#00f0ff" stroke-width="1.5" opacity="0.4"/>
+    <line x1="1000" y1="160" x2="1070" y2="195" stroke="#ff2ec4" stroke-width="1.5" opacity="0.4"/>
+    <line x1="960" y1="160" x2="985" y2="245" stroke="#7a5cff" stroke-width="1.5" opacity="0.4"/>
+    <line x1="1050" y1="220" x2="1005" y2="255" stroke="#00f0ff" stroke-width="1.5" opacity="0.4"/>
+  </g>
+
+  <!-- performance gauge -->
+  <g transform="translate(1005,175)">
+    <circle r="82" fill="none" stroke="#1c2a52" stroke-width="10"/>
+    <path d="M -58 41 A 82 82 0 1 1 58 41" fill="none" stroke="url(#cyan)" stroke-width="10" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="45" y2="-30" stroke="url(#needleGrad)" stroke-width="5" stroke-linecap="round"/>
+    <circle r="7" fill="#00f0ff"/>
+    <circle r="3" fill="#ffffff"/>
+  </g>
+
+  <!-- headline -->
+  <text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="70" font-weight="700" fill="#f2f6ff" textLength="760" lengthAdjust="spacingAndGlyphs">
+    Game Booster
+  </text>
+  <text x="60" y="230" font-family="'Segoe UI', Arial, sans-serif" font-size="70" font-weight="700" fill="#00f0ff" textLength="520" lengthAdjust="spacingAndGlyphs">
+    Optimizer
+  </text>
+
+  <!-- tagline -->
+  <text x="60" y="278" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#9db4e0" textLength="800" lengthAdjust="spacingAndGlyphs">
+    Boosts system performance with pluggable optimizer modules
+  </text>
+  <text x="60" y="306" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#9db4e0" textLength="330" lengthAdjust="spacingAndGlyphs">
+    for the gaming ecosystem
+  </text>
+
+  <!-- baseline accent -->
+  <rect x="60" y="112" width="140" height="6" fill="url(#cyan)" opacity="0.8"/>
+</svg>
